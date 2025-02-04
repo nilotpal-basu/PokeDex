@@ -1,5 +1,4 @@
 import os
-import sys
 import numpy as np
 import pandas as pd
 from tensorflow.keras.preprocessing.image import load_img,img_to_array
@@ -46,13 +45,3 @@ def data_splitter(df):
     y_train = np.argmax(y_train, axis=1)
     y_test = np.argmax(y_test, axis=1)
     return X_train , X_test , y_train , y_test 
-
-
-# if __name__=='__main__' :
-    # script_directory = os.path.dirname(os.path.abspath(sys.argv[0])) 
-    # script_directory = os.path.join(script_directory,'pokemon-dataset-1000')
-    # script_directory = os.path.join(script_directory,'dataset')
-    # df = data_ldr(script_directory)
-
-    # X_train , X_test , y_train , y_test = data_splitter(df)
-    # print(class_name_gen(df))

@@ -3,7 +3,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense , Dropout , BatchNormalization ,GlobalAveragePooling2D
 
 import tensorflow as tf
-import random
 
 
 def model():

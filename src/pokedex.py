@@ -1,6 +1,6 @@
 import sys , os
 from PyQt6.QtWidgets import QApplication, QLabel, QPushButton, QFileDialog, QWidget
-from PyQt6.QtGui import QPixmap, QPainter, QImage , QFont
+from PyQt6.QtGui import QPixmap, QFont
 from PyQt6.QtCore import Qt
 from predict import pred_poke
 from att_fetcher import get_pokemon_info
@@ -15,11 +15,11 @@ class PokedexApp(QWidget):
 
         # Set background image
         self.bg_label = QLabel(self)
-        self.bg_label.setPixmap(QPixmap(os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])),"pkdex.jpg")))
+        self.bg_label.setPixmap(QPixmap("..\\assets\\pokedex_background_img.jpg"))
         self.bg_label.setScaledContents(True)
         self.bg_label.resize(600, 400)
 
-        # Pokémon Display Screen
+        # Pokemon Display Screen
         self.pokemon_label = QLabel(self)
         self.pokemon_label.setGeometry(45, 109, 212, 135)
         self.pokemon_label.setStyleSheet("border: 2px solid black; background-color: white;")

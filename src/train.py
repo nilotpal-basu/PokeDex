@@ -35,7 +35,8 @@ def train_model(model , X_train , X_test , y_train , y_test):
     model.save("your model name")
 
 if __name__=="__main__":
-    script_directory = "your path" 
+    script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+    script_directory = os.path.abspath(os.path.join(script_directory, os.pardir))
     script_directory = os.path.join(script_directory,'pokemon-dataset-1000')
     script_directory = os.path.join(script_directory,'dataset')
     df = data_ldr(script_directory)

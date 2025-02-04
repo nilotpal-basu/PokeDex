@@ -7,7 +7,8 @@ from model_gen import model
 import keras
 
 def pred_poke(img_path,img_size=(128,128)):
-    pw_dir = os.path.dirname("path to root folder") 
+    pw_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+    pw_dir = os.path.abspath(os.path.join(pw_dir, os.pardir))
     ds_directory = os.path.join(pw_dir,'pokemon-dataset-1000')
     ds_directory = os.path.join(ds_directory,'dataset')
 

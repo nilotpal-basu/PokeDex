@@ -33,7 +33,7 @@ class PokedexApp(QWidget):
         self.prediction_label = QLabel("", self)
         self.prediction_label.setGeometry(360, 116, 199, 93)
         self.prediction_label.setFont(QFont('Times')) 
-        self.prediction_label.setStyleSheet("background-color: #19f223; color: black; font-size: 14px;")
+        self.prediction_label.setStyleSheet("border: 2px solid black;background-color: #19f223; color: black; font-size: 14px;")
         self.prediction_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         

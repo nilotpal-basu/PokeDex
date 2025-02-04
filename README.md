@@ -1,4 +1,5 @@
-![Screenshot 2025-02-04 202538](https://github.com/user-attachments/assets/e775b9d7-e126-4ead-ab59-c3851d490b09)
+![Screenshot 2025-02-04 233728](https://github.com/user-attachments/assets/faf2ef41-d057-4b80-ac66-af5ff838b8e6)
+
 
 # Pokédex Classifier
 

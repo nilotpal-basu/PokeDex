@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project is a Pokédex-inspired Pokémon classifier built using TensorFlow with EfficientNetB0 as the base model. The frontend is designed using PyQt6, replicating the UI/UX of a Pokédex. Users can upload an image of a Pokémon, and the classifier predicts its name. Additionally, Pokémon attributes can be fetched using an API.
+This project is a Pokédex-inspired Pokémon classifier built using TensorFlow with EfficientNetB0 as the base model. The frontend is designed using PyQt6, replicating the UI/UX of a Pokédex. Users can upload an image of a Pokémon, and the classifier predicts its name. Additionally, Pokémon attributes are fetched using an open-source RESTful API.
 
 ## Features
 - **Image Classification :** Uses a TensorFlow model with **EfficientNetB0** to classify Pokémon.

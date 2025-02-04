@@ -15,7 +15,7 @@ def pred_poke(img_path,img_size=(128,128)):
     df = data_ldr(ds_directory)
     class_name = class_name_gen(df)
     
-    model_dir = os.path.join(pw_dir,'your model name')
+    model_dir = os.path.join(pw_dir,'my_model.h5')
     my_model = keras.models.load_model(model_dir)
 
     img = load_img(img_path, target_size=img_size) 

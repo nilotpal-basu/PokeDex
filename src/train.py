@@ -2,6 +2,7 @@ from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
 from model_gen import model
 from data_loader import *
+import os , sys
 
 def image_generator(X, y, batch_size, class_weights):
     while True:
@@ -32,7 +33,10 @@ def train_model(model , X_train , X_test , y_train , y_test):
         verbose=1
     )
 
-    model.save("your model name")
+    pw_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+    pw_dir = os.path.abspath(os.path.join(pw_dir, os.pardir))
+    model_dir = os.path.join(pw_dir,'my_model.h5')
+    model.save(model_dir)
 
 if __name__=="__main__":
     script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))

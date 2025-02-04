@@ -15,7 +15,11 @@ class PokedexApp(QWidget):
 
         # Set background image
         self.bg_label = QLabel(self)
-        self.bg_label.setPixmap(QPixmap("..\\assets\\pokedex_background_img.jpg"))
+        bg_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
+        bg_dir = os.path.abspath(os.path.join(bg_dir, os.pardir))
+        bg_dir = os.path.join(bg_dir,'assets')
+        bg_dir = os.path.join(bg_dir,'pokedex_background_img.jpg')
+        self.bg_label.setPixmap(QPixmap(bg_dir))
         self.bg_label.setScaledContents(True)
         self.bg_label.resize(600, 400)
 
